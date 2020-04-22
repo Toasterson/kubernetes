@@ -293,6 +293,9 @@ function detect_binary {
       Linux)
         host_os=linux
         ;;
+      SunOS)
+        host_os=illumos
+        ;;
       *)
         echo "Unsupported host OS.  Must be Linux or Mac OS X." >&2
         exit 1
@@ -307,6 +310,9 @@ function detect_binary {
         host_arch=amd64
         ;;
       amd64*)
+        host_arch=amd64
+        ;;
+      i86pc)
         host_arch=amd64
         ;;
       aarch64*)
