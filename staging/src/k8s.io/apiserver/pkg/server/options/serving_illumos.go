@@ -1,4 +1,4 @@
-// +build !windows,!illumos
+// +build illumos
 
 /*
 Copyright 2020 The Kubernetes Authors.
@@ -19,13 +19,12 @@ limitations under the License.
 package options
 
 import (
+	"fmt"
 	"syscall"
-
-	"golang.org/x/sys/unix"
 )
 
-func permitPortReuse(network, addr string, conn syscall.RawConn) error {
-	return conn.Control(func(fd uintptr) {
-		syscall.SetsockoptInt(int(fd), syscall.SOL_SOCKET, unix.SO_REUSEPORT, 1)
-	})
+// Windows only supports SO_REUSEADDR, which may cause undefined behavior, as
+// there is no protection against port hijacking.
+func permitPortReuse(network, address string, c syscall.RawConn) error {
+	return fmt.Errorf("port reuse is not supported on Windows")
 }
