@@ -27,6 +27,7 @@ import (
 	"io"
 	"io/ioutil"
 	"regexp"
+	"runtime"
 	"sync"
 	"time"
 
@@ -38,7 +39,13 @@ import (
 	dockerapi "github.com/docker/docker/client"
 	dockermessage "github.com/docker/docker/pkg/jsonmessage"
 	dockerstdcopy "github.com/docker/docker/pkg/stdcopy"
+	specs "github.com/opencontainers/image-spec/specs-go/v1"
 )
+
+var platform = specs.Platform{
+	Architecture: runtime.GOARCH,
+	OS:           runtime.GOOS,
+}
 
 // kubeDockerClient is a wrapped layer of docker client for kubelet internal use. This layer is added to:
 //	1) Redirect stream for exec and attach operations.
@@ -145,7 +152,7 @@ func (d *kubeDockerClient) CreateContainer(opts dockertypes.ContainerCreateConfi
 	if opts.HostConfig != nil && opts.HostConfig.ShmSize <= 0 {
 		opts.HostConfig.ShmSize = defaultShmSize
 	}
-	createResp, err := d.client.ContainerCreate(ctx, opts.Config, opts.HostConfig, opts.NetworkingConfig, opts.Name)
+	createResp, err := d.client.ContainerCreate(ctx, opts.Config, opts.HostConfig, opts.NetworkingConfig, &platform, opts.Name)
 	if ctxErr := contextError(ctx); ctxErr != nil {
 		return nil, ctxErr
 	}
