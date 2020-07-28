@@ -1,8 +1,8 @@
-// +build !windows
+// +build !windows,!illumos,!solaris
 
 // Package term provides structures and helper functions to work with
 // terminal (state, sizes).
-package term // import "github.com/moby/term"
+package term
 
 import (
 	"errors"

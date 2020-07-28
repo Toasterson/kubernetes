@@ -26,10 +26,16 @@ go_test(
         "@io_bazel_rules_go//go/platform:freebsd": [
             "//vendor/github.com/stretchr/testify/require:go_default_library",
         ],
+        "@io_bazel_rules_go//go/platform:illumos": [
+            "//vendor/github.com/stretchr/testify/require:go_default_library",
+        ],
         "@io_bazel_rules_go//go/platform:ios": [
             "//vendor/github.com/stretchr/testify/require:go_default_library",
         ],
         "@io_bazel_rules_go//go/platform:linux": [
+            "//vendor/github.com/stretchr/testify/require:go_default_library",
+        ],
+        "@io_bazel_rules_go//go/platform:solaris": [
             "//vendor/github.com/stretchr/testify/require:go_default_library",
         ],
         "@io_bazel_rules_go//go/platform:windows": [
@@ -44,6 +50,7 @@ go_library(
     name = "go_default_library",
     srcs = [
         "boottime_util_darwin.go",
+        "boottime_util_illumos.go",
         "boottime_util_linux.go",
         "doc.go",
         "util.go",
@@ -67,11 +74,20 @@ go_library(
             "//vendor/golang.org/x/sys/unix:go_default_library",
             "//vendor/k8s.io/klog/v2:go_default_library",
         ],
+        "@io_bazel_rules_go//go/platform:illumos": [
+            "//vendor/github.com/shirou/gopsutil/host:go_default_library",
+            "//vendor/golang.org/x/sys/unix:go_default_library",
+            "//vendor/k8s.io/klog/v2:go_default_library",
+        ],
         "@io_bazel_rules_go//go/platform:ios": [
             "//vendor/golang.org/x/sys/unix:go_default_library",
             "//vendor/k8s.io/klog/v2:go_default_library",
         ],
         "@io_bazel_rules_go//go/platform:linux": [
+            "//vendor/golang.org/x/sys/unix:go_default_library",
+            "//vendor/k8s.io/klog/v2:go_default_library",
+        ],
+        "@io_bazel_rules_go//go/platform:solaris": [
             "//vendor/golang.org/x/sys/unix:go_default_library",
             "//vendor/k8s.io/klog/v2:go_default_library",
         ],

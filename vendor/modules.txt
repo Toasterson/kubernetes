@@ -110,6 +110,10 @@ github.com/PuerkitoBio/purell
 # github.com/PuerkitoBio/urlesc v0.0.0-20170810143723-de5bf2ad4578 => github.com/PuerkitoBio/urlesc v0.0.0-20170810143723-de5bf2ad4578
 github.com/PuerkitoBio/urlesc
 # github.com/PuerkitoBio/urlesc => github.com/PuerkitoBio/urlesc v0.0.0-20170810143723-de5bf2ad4578
+# github.com/StackExchange/wmi v0.0.0-20190523213315-cbe66965904d => github.com/StackExchange/wmi v0.0.0-20190523213315-cbe66965904d
+## explicit
+github.com/StackExchange/wmi
+# github.com/StackExchange/wmi => github.com/StackExchange/wmi v0.0.0-20190523213315-cbe66965904d
 # github.com/agnivade/levenshtein => github.com/agnivade/levenshtein v1.0.1
 # github.com/ajstarks/svgo => github.com/ajstarks/svgo v0.0.0-20180226025133-644b8db467af
 # github.com/alecthomas/template => github.com/alecthomas/template v0.0.0-20190718012654-fb15b899a751
@@ -239,8 +243,10 @@ github.com/containerd/containerd/api/types
 github.com/containerd/containerd/api/types/task
 github.com/containerd/containerd/containers
 github.com/containerd/containerd/errdefs
+github.com/containerd/containerd/log
 github.com/containerd/containerd/namespaces
 github.com/containerd/containerd/pkg/dialer
+github.com/containerd/containerd/platforms
 # github.com/containerd/continuity => github.com/containerd/continuity v0.0.0-20190426062206-aaeac12a7ffc
 # github.com/containerd/fifo => github.com/containerd/fifo v0.0.0-20190226154929-a9fb20d87448
 # github.com/containerd/go-runc => github.com/containerd/go-runc v0.0.0-20180907222934-5a6d9f37cfa3
@@ -311,9 +317,9 @@ github.com/dgrijalva/jwt-go
 github.com/docker/distribution/digestset
 github.com/docker/distribution/reference
 github.com/docker/distribution/registry/api/errcode
-# github.com/docker/docker v1.4.2-0.20200309214505-aa6a9891b09c => github.com/docker/docker v1.4.2-0.20200309214505-aa6a9891b09c
+# github.com/docker/docker v17.12.0-ce-rc1.0.20200728121027-0f41a77c6993+incompatible => github.com/docker/docker v17.12.0-ce-rc1.0.20200728121027-0f41a77c6993+incompatible
 ## explicit
-# github.com/docker/docker => github.com/docker/docker v1.4.2-0.20200309214505-aa6a9891b09c
+# github.com/docker/docker => github.com/docker/docker v17.12.0-ce-rc1.0.20200728121027-0f41a77c6993+incompatible
 github.com/docker/docker/api
 github.com/docker/docker/api/types
 github.com/docker/docker/api/types/blkiodev
@@ -334,8 +340,6 @@ github.com/docker/docker/client
 github.com/docker/docker/errdefs
 github.com/docker/docker/pkg/jsonmessage
 github.com/docker/docker/pkg/stdcopy
-github.com/docker/docker/pkg/term
-github.com/docker/docker/pkg/term/windows
 # github.com/docker/go-connections v0.4.0 => github.com/docker/go-connections v0.4.0
 ## explicit
 # github.com/docker/go-connections => github.com/docker/go-connections v0.4.0
@@ -401,6 +405,11 @@ github.com/go-bindata/go-bindata/go-bindata
 # github.com/go-logr/logr v0.2.0 => github.com/go-logr/logr v0.2.0
 github.com/go-logr/logr
 # github.com/go-logr/logr => github.com/go-logr/logr v0.2.0
+# github.com/go-ole/go-ole v1.2.4 => github.com/go-ole/go-ole v1.2.4
+## explicit
+github.com/go-ole/go-ole
+# github.com/go-ole/go-ole => github.com/go-ole/go-ole v1.2.4
+github.com/go-ole/go-ole/oleutil
 # github.com/go-openapi/analysis v0.19.5 => github.com/go-openapi/analysis v0.19.5
 ## explicit
 github.com/go-openapi/analysis
@@ -666,9 +675,9 @@ github.com/heketi/heketi/pkg/utils
 # github.com/heketi/tests v0.0.0-20151005000721-f3775cbcefd6 => github.com/heketi/tests v0.0.0-20151005000721-f3775cbcefd6
 ## explicit
 # github.com/heketi/tests => github.com/heketi/tests v0.0.0-20151005000721-f3775cbcefd6
-# github.com/hpcloud/tail v1.0.0 => github.com/hpcloud/tail v1.0.0
+# github.com/hpcloud/tail v1.0.1-0.20200728165712-f5d389fbf3c3 => github.com/toasterson/tail v1.0.1-0.20200728165712-f5d389fbf3c3
 github.com/hpcloud/tail
-# github.com/hpcloud/tail => github.com/hpcloud/tail v1.0.0
+# github.com/hpcloud/tail => github.com/toasterson/tail v1.0.1-0.20200728165712-f5d389fbf3c3
 github.com/hpcloud/tail/ratelimiter
 github.com/hpcloud/tail/util
 github.com/hpcloud/tail/watch
@@ -778,9 +787,9 @@ github.com/moby/ipvs
 # github.com/moby/sys/mountinfo v0.1.3 => github.com/moby/sys/mountinfo v0.1.3
 github.com/moby/sys/mountinfo
 # github.com/moby/sys/mountinfo => github.com/moby/sys/mountinfo v0.1.3
-# github.com/moby/term v0.0.0-20200312100748-672ec06f55cd => github.com/moby/term v0.0.0-20200312100748-672ec06f55cd
+# github.com/moby/term v0.0.0-20200611042045-63b9a826fb74 => github.com/moby/term v0.0.0-20200611042045-63b9a826fb74
 github.com/moby/term
-# github.com/moby/term => github.com/moby/term v0.0.0-20200312100748-672ec06f55cd
+# github.com/moby/term => github.com/moby/term v0.0.0-20200611042045-63b9a826fb74
 github.com/moby/term/windows
 # github.com/modern-go/concurrent v0.0.0-20180306012644-bacd9c7ef1dd => github.com/modern-go/concurrent v0.0.0-20180306012644-bacd9c7ef1dd
 github.com/modern-go/concurrent
@@ -864,6 +873,7 @@ github.com/onsi/gomega/types
 github.com/opencontainers/go-digest
 # github.com/opencontainers/go-digest => github.com/opencontainers/go-digest v1.0.0-rc1
 # github.com/opencontainers/image-spec v1.0.1 => github.com/opencontainers/image-spec v1.0.1
+## explicit
 # github.com/opencontainers/image-spec => github.com/opencontainers/image-spec v1.0.1
 github.com/opencontainers/image-spec/specs-go
 github.com/opencontainers/image-spec/specs-go/v1
@@ -968,6 +978,15 @@ github.com/satori/go.uuid
 github.com/seccomp/libseccomp-golang
 # github.com/seccomp/libseccomp-golang => github.com/seccomp/libseccomp-golang v0.9.1
 # github.com/sergi/go-diff => github.com/sergi/go-diff v1.0.0
+# github.com/shirou/gopsutil v2.20.6+incompatible => github.com/shirou/gopsutil v2.20.6+incompatible
+## explicit
+# github.com/shirou/gopsutil => github.com/shirou/gopsutil v2.20.6+incompatible
+github.com/shirou/gopsutil/cpu
+github.com/shirou/gopsutil/host
+github.com/shirou/gopsutil/internal/common
+github.com/shirou/gopsutil/mem
+github.com/shirou/gopsutil/net
+github.com/shirou/gopsutil/process
 # github.com/shurcooL/sanitized_anchor_name v1.0.0 => github.com/shurcooL/sanitized_anchor_name v1.0.0
 github.com/shurcooL/sanitized_anchor_name
 # github.com/shurcooL/sanitized_anchor_name => github.com/shurcooL/sanitized_anchor_name v1.0.0
@@ -1500,9 +1519,10 @@ google.golang.org/protobuf/types/pluginpb
 # gopkg.in/check.v1 => gopkg.in/check.v1 v1.0.0-20190902080502-41f04d3bba15
 # gopkg.in/cheggaaa/pb.v1 => gopkg.in/cheggaaa/pb.v1 v1.0.25
 # gopkg.in/errgo.v2 => gopkg.in/errgo.v2 v2.1.0
-# gopkg.in/fsnotify.v1 v1.4.7 => gopkg.in/fsnotify.v1 v1.4.7
-gopkg.in/fsnotify.v1
 # gopkg.in/fsnotify.v1 => gopkg.in/fsnotify.v1 v1.4.7
+# gopkg.in/fsnotify/fsnotify.v1 v1.4.7 => gopkg.in/fsnotify/fsnotify.v1 v1.4.7
+gopkg.in/fsnotify/fsnotify.v1
+# gopkg.in/fsnotify/fsnotify.v1 => gopkg.in/fsnotify/fsnotify.v1 v1.4.7
 # gopkg.in/gcfg.v1 v1.2.0 => gopkg.in/gcfg.v1 v1.2.0
 ## explicit
 gopkg.in/gcfg.v1

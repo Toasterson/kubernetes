@@ -18,6 +18,7 @@ go_library(
         "recommended.go",
         "server_run_options.go",
         "serving.go",
+        "serving_illumos.go",
         "serving_unix.go",
         "serving_windows.go",
         "serving_with_loopback.go",
@@ -101,9 +102,6 @@ go_library(
             "//vendor/golang.org/x/sys/unix:go_default_library",
         ],
         "@io_bazel_rules_go//go/platform:freebsd": [
-            "//vendor/golang.org/x/sys/unix:go_default_library",
-        ],
-        "@io_bazel_rules_go//go/platform:illumos": [
             "//vendor/golang.org/x/sys/unix:go_default_library",
         ],
         "@io_bazel_rules_go//go/platform:ios": [

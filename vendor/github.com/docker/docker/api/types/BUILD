@@ -7,6 +7,7 @@ go_library(
         "client.go",
         "configs.go",
         "error_response.go",
+        "error_response_ext.go",
         "graph_driver_data.go",
         "id_response.go",
         "image_delete_response_item.go",
@@ -36,6 +37,7 @@ go_library(
         "//vendor/github.com/docker/docker/api/types/swarm:go_default_library",
         "//vendor/github.com/docker/go-connections/nat:go_default_library",
         "//vendor/github.com/docker/go-units:go_default_library",
+        "//vendor/github.com/opencontainers/image-spec/specs-go/v1:go_default_library",
     ],
 )
 

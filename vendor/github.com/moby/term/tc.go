@@ -1,6 +1,6 @@
-// +build !windows
+// +build !windows,!illumos,!solaris
 
-package term // import "github.com/moby/term"
+package term
 
 import (
 	"syscall"

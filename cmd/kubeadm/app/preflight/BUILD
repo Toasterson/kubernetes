@@ -11,6 +11,7 @@ go_library(
     srcs = [
         "checks.go",
         "checks_darwin.go",
+        "checks_illumos.go",
         "checks_linux.go",
         "checks_unix.go",
         "checks_windows.go",
