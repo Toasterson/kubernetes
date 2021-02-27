@@ -106,7 +106,7 @@ require (
 	gonum.org/v1/netlib v0.0.0-20190331212654-76723241ea4e // indirect
 	google.golang.org/api v0.20.0
 	google.golang.org/appengine v1.6.5 // indirect
-	google.golang.org/grpc v1.27.1
+	google.golang.org/grpc v1.36.0
 	gopkg.in/gcfg.v1 v1.2.0
 	gopkg.in/square/go-jose.v2 v2.2.2
 	gopkg.in/yaml.v2 v2.2.8
