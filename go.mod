@@ -132,7 +132,7 @@ require (
 	k8s.io/kube-openapi v0.0.0-20201113171705-d219536bb9fd
 	k8s.io/kube-proxy v0.0.0
 	k8s.io/kube-scheduler v0.0.0
-	k8s.io/kubectl v0.0.0
+	k8s.io/kubectl v0.20.4
 	k8s.io/kubelet v0.0.0
 	k8s.io/legacy-cloud-providers v0.0.0
 	k8s.io/metrics v0.0.0
